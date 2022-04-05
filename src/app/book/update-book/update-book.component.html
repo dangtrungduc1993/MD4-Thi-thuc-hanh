@@ -1,0 +1,19 @@
+<h1>Update book</h1>
+<form *ngIf="bookForm" [formGroup]="bookForm" (ngSubmit)="editBook()"style="width:50%">
+  <div>
+    <label for="title">Book Name</label>;
+    <input type="text" id="title" formControlName="title"class="form-control">
+    <input type="text" formControlName="id" hidden>
+  </div>
+  <div>
+    <label for="author">Author</label>;
+    <input type="text" id="author" formControlName="author"class="form-control">
+  </div>
+  <div>
+    <label for="author">Description</label>;
+    <input type="text" id="description" formControlName="description"class="form-control">
+  </div>
+  <div>
+    <button class="btn btn-primary">Update</button>
+  </div>
+</form>

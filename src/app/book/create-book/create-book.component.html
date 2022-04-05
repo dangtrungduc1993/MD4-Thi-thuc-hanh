@@ -1,0 +1,19 @@
+<h4>Create Book</h4>
+<form [formGroup]="bookForm" (ngSubmit)="createBook()" style="width:50%">
+  <div class="form-group">
+    <label for="title">Book Name</label> :
+    <input type="text" id="title" formControlName="title"class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="author">Author</label> :
+    <input type="text" id="author" formControlName="author"class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label> :
+    <textarea type="text" id="description" formControlName="description"class="form-control"></textarea>
+    <!-- <input type="text" id="description" formControlName="description"> -->
+  </div>
+  <div>
+    <button class="btn btn-primary">Create Book</button>
+  </div>
+</form>

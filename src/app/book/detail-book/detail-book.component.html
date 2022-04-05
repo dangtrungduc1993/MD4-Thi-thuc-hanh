@@ -1,0 +1,30 @@
+<!-- <h1>Thong tin san pham</h1>
+<a routerLink="/books">Back To List</a>
+<table>
+  <tr>
+    <td>STT</td>
+    <td>Title</td>
+    <td>Author</td>
+    <td>Description</td>
+  </tr>
+  <tr *ngFor = "let book of book; index as i">
+    <td>{{i + 1}}</td>
+    <td>{{book.title}}</td>
+    <td>{{book.author}}</td>
+    <td>{{book.description}}</td>
+  </tr>
+</table> -->
+
+<div class="container">
+  <div>
+    <div class="col-6">Chi tết sách</div>
+  </div>
+  <div>
+    <p>Tên sách: </p>
+    <p>{{book.title}}</p>
+    <p>Tác giả: </p>
+    <p>{{book.author}}</p>
+    <p>Mô tả: </p>
+    <p>{{book.description}}</p>
+  </div>
+</div>
